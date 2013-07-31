@@ -31,6 +31,7 @@ class GenerateReport extends BaseExample {
     $startDate = $this->getSixMonthsBeforeNow();
     $endDate = $this->getNow();
     $optParams = array(
+      'accountId' => ACCOUNT_ID,
       'metric' => array(
         'PAGE_VIEWS', 'AD_REQUESTS', 'AD_REQUESTS_COVERAGE',
         'CLICKS', 'AD_REQUESTS_CTR', 'COST_PER_CLICK', 'AD_REQUESTS_RPM',

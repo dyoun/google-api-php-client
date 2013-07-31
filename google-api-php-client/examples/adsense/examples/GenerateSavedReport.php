@@ -27,12 +27,12 @@ require_once __DIR__ . "/../BaseExample.php";
  *
  * @author Sérgio Gomes <sgomes@google.com>
  */
-class GenerateReport extends BaseExample {
+class GenerateSavedReport extends BaseExample {
   public function render() {
     $accountId = ACCOUNT_ID;
     $savedReportId = SAVED_REPORT_ID;
     // Retrieve report.
-    $report = $this->adSenseService->account_reports_saved
+    $report = $this->adSenseService->accounts_reports_saved
         ->generate($accountId, $savedReportId);
 
     if (isset($report['rows'])) {
